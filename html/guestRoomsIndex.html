@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="guestStyle.css">
+		<link rel="stylesheet" href="calenderStyle.css">
+		<title>Stovesberg andelsforening</title>
+	</head>
+	
+	<body>
+	<!-- Horizontal menu in top	-->
+		<ul class="main-menu">
+			<li><a href="./index.html">Forside</a></li>
+			<li><a href="./news.html">Nyheder</a></li>
+			<li><a href="./sales.html">Salgsopslag</a></li>
+			<li><a href="./board.html">Bestyrelse</a></li>
+			<li><a href="./gallery.html">Gallerier</a></li>
+			<li><a class="active_element" href="./guestRoomsIndex.html">Gæsteværelser</a></li>
+			<li><a href="./contact.html">Kontakt</a></li>
+		</ul>
+
+	
+		<div class="separator" > </div>
+
+		<div class="pane_container">
+			<div class="leftmost_pane"> </div>
+			
+			<div class="left_pane">
+				<h3>Gæsteværelser</h3>
+				<p> 
+				Stovesberg andelsforening har 2. gæsteværelser der kan lejes af beboere til kortere ophold. Værelserne befinder sig under Hjallesevej 102. Begge har østvendte vinduer med morgensol. </br>
+				</br>
+				Prisen for leje af et værelse er 100,- pr. nat. </br>
+				Lejen trækkes automatisk, af administrationen, over boligafgiften. </br>
+				</br>
+				Vicevært Peter Isak står for udlejning og udlevering af nøgler til værelserne. </br>
+				Peter kan kontaktes via e-mail. </br>
+				</br>
+				Ved lejeperiodens udløb skal værelset forlades senest kl. 11, og nøglen lægges i postkassen ved indgangen til Hjallesevej 88. </br>
+				Lejer er ansvarlig for rengøringen når lejeperioden udløber.
+				</p>
+			</div>	<!-- End of left pane -->
+			
+			<div class="right_pane">
+				<div class="calender_container">
+					<header class="calender_header">
+						<p id="calender_head" class="calender_current_date"></p>
+						<div class="calender_navigation">
+							<span id="calender_prev" class="material_symbol_rounded">
+								<
+							</span>
+							<span id="calender_next" class="material_symbol_rounded">
+								>
+							</span>
+						</div>
+					</header>
+
+					<div class="calender_body">
+						<ul class="calender_weekdays">
+							<li>Sun</li>
+							<li>Mon</li>
+							<li>Tue</li>
+							<li>Wed</li>
+							<li>Thu</li>
+							<li>Fri</li>
+							<li>Sat</li>
+						</ul>
+						<ul class="calender_dates"></ul>
+					</div>
+					<button id="reserve_btn">Reserver</button>
+				</div>
+
+			</div>	<!-- End of right pane -->
+			
+			<div class="rightmost_pane"> </div>
+		</div>
+
+
+	<!-- Links in bottom of page	-->
+		<div class="link_bar">
+			<div class="link_bar_column">
+				<div class="social">
+					<a href="https://facebook.com/">
+						<p> Beboernes Facebook </p>
+						<img src="./FacebookIcon.png" alt="FB LOGO">
+					</a>
+				</div>
+			</div>
+
+			<div class="link_bar_column">
+				<div class="webstorage">
+					<a href="drive.google.com">
+						<p> Shared folder </p>
+						<img src="./SharedFolderIcon.png" alt="Google drive logo">
+					</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- Include script when layout is created -->
+		<script src="calenderScript.js"> </script>
+
+	</body>
+</html>

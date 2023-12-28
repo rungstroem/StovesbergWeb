@@ -1,0 +1,197 @@
+/* Style sheet */
+
+/* vh - viewport height
+ * vw - viewport width
+ * 1vh is equivalent to 1% of the view height
+ * ie. a better "pixel" */
+
+body {
+	margin: 0;
+	background-color: rgb(250,250,250);
+	/*max-width: 1500px;*/
+	max-width: auto;
+	text-align: center;
+}
+
+
+/* Horizontal menu */
+.main-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+.main-menu li {
+	float: left;
+}
+
+.main-menu li a{
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.main-menu li a:hover:not(.active_element) {
+	background-color: #111;
+}
+
+.main-menu li a.active_element {
+/*	background-color: #04AA6D; -> nice green	*/
+	background-color: #ECAF45;
+}
+
+
+/* Welcome image */
+.welcome_gfx {
+	position: relative;
+}
+.welcome_gfx img{
+	width: 100%;
+}
+
+.welcome_gfx div p{
+	position: absolute;
+	width: 100%;
+	top: 80%;
+	
+	margin: 0 auto;
+	text-align: center;
+	background: rgba(0,0,0,0.5);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	color: white;
+	font-size: 20px;
+}
+
+#StartColor {
+	color: rgb(255,255,255);
+}
+#EndColor {
+	color: rgb(180,180,180);
+}
+
+/* Logo placement */
+#Logo {
+	position: absolute;
+	width: 10%;
+	top: 3%;
+	left: 0.3%;
+	z-index: 2;
+
+}
+
+/* Welcome text */
+.welcome_txt {
+	position: relative;
+	width: 100%;
+}
+
+.welcome_txt p {
+	background-color: rgba(236, 175, 69, 0.7);
+/*	background-color: #ECAF45;	*/
+	text-align: center;
+	margin: 0;
+}
+
+.welcome_txt #welcome {
+	font-size: 30px;
+	padding-top: 40px;
+	padding-bottom: 12px;
+}
+
+.welcome_txt #Stovesberg {
+	font-size: 40px;
+	font-weight: bold;
+	padding-bottom: 40px;
+}
+
+
+
+
+/* Social & Share folder */
+.link_bar {
+	position: relative;
+	width: 100%;
+	background-color: rgb(230,230,230);
+}
+
+.link_bar_column {
+	position: relative;
+	display: inline-block;
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 20px
+}
+
+.social p {
+	background-color: rgb(230,230,230);
+	float: left;
+	padding-right: 30px;
+	text-decoration: none;
+	color: black;
+}
+
+.social img {
+	position: relative;
+	max-width: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.webstorage p {
+	background-color: rgb(230,230,230);
+	float: left;
+	padding-right: 30px;
+	text-decoration: none;
+	color: black;
+}
+
+.webstorage img {
+	position: relative;
+	max-width: 50px;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+
+.separator {
+	width: 100%;
+	height: 10px;
+}
+.pane_container {
+	width: 100%;
+	float: center;
+	height: 100%;
+	position: relative;
+	display: flex;
+}
+
+.pane_container .leftmost_pane {
+	float: left;
+	width: 20%;
+	background-color: rgb(255,255,255);
+}
+.pane_container .rightmost_pane {
+	float: right;
+	width: 20%;
+	background-color: rgb(255,255,255);
+}
+
+.pane_container .left_pane {
+	float: left;
+	width: 40%;
+	padding: 40px;
+	background-color: rgb(255,255,255);
+	text-align: left;
+}
+.pane_container .right_pane {
+	float: left;
+	width: 20%;
+	padding: 40px;
+	background-color: rgb(255,255,255);
+	border-left: 1px solid lightgray;
+}

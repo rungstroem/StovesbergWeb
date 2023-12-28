@@ -1,0 +1,13 @@
+.list {
+}
+.list-element{
+	display: inline-block;
+}
+.list-element.image {
+	max-width: 40%;
+	float: left;
+}
+.list-element.text{
+	max-width: 60%;
+	float: right;
+}

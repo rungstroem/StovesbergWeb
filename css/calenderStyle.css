@@ -1,0 +1,128 @@
+.right_pane {
+	display: flex;
+	/*min-height: 100vh;*/
+	padding: 0 10px;
+	align-items: top;
+	justify-content: center;
+}
+
+.calender_container {
+	background: #fff;
+	width: 500px;
+	border-radius: 10px;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+}
+
+.calender_container header {
+	display: flex;
+	align-items: center;
+	padding: 25px 30px 10px;
+	justify-content: space-between;
+}
+
+header .calender_navigation {
+	display: flex;
+}
+
+header .calender_navigation span {
+	height: 38px;
+	width: 38px;
+	margin 0 1px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 38px;
+	border-radius: 50%;
+	user-select: none;
+	color: #aeabab;
+	font-size: 1.9rem;
+}
+
+.calender_navigation span:last-child {
+	margin-right: -10px;
+}
+
+header .calender_navigation span:hover {
+	background: #f2f2f2;
+}
+
+header .calender_current_date {
+	font-weight: 500;
+	font-size: 1.45rem;
+}
+
+.calender_body {
+	padding: 20px;
+}
+
+.calender_body ul {
+	list-style: none;
+	flex-wrap: wrap;
+	display: flex;
+	text-align: center;
+}
+
+.calender_body .calender_dates {
+	margin-bottom: 20px;
+}
+
+.calender_body li{
+	width: calc(100% / 7);
+	font-size: 1.07rem;
+	color: #414141;
+}
+
+.calender_body .calender_weekdays li {
+	cursor: default;
+	font-weight: 500;
+}
+
+.calender_body .calender_dates li {
+	margin-top: 30px;
+	position: relative;
+	z-index: 1;
+	cursor: pointer;
+}
+
+.calender_dates li.inactive {
+	color: #aaa;
+}
+
+.calender_dates li.active {
+	color: #fff;
+}
+
+.calender_dates li::before {
+	position: absolute;
+	content: "";
+	z-index: -1;
+	top: 50%;
+	left: 50%;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.calender_dates li.active::before {
+	background: #6332c5;
+}
+
+.calender_dates li:not(.active):hover::before {
+	background: #e4e1e1;
+}
+
+.calender_container #reserve_btn {
+	float: left;
+	margin-left: 25px;
+	margin-bottom: 25px;
+	border-radius: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 15px;
+	padding-left: 15px;
+	background-color: #fff;
+}
+
+.calender_container #reserve_btn:hover {
+	background-color: #e4e1e1;
+}
