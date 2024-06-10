@@ -10,38 +10,44 @@
 	background: #fff;
 	width: 500px;
 	border-radius: 10px;
-	box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+	box-shadow: 15px 15px 40px rgba(0,0,0,0.12);
 	position: relative;
-}
-
-.calender_container header {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
-	padding: 25px 30px 10px;
+}
+
+.calender_container .textfields {
+	padding: 10px;
+	height: 20px;
+	font-size: 16px;
+	border-radius: 5px;
+}
+
+.calender_container #username {
+	width: 80%;
+	margin-top: 30px;
+	margin-bottom: 15px;
+}
+
+.calender_container .userinfo {
+	display: flex;
 	justify-content: space-between;
+	margin-bottom: 15px;
+	width: 85%;
 }
 
-/* All sub'things' in container */
-.calender_container > * {
-	padding-left: 25px;
-	align-items: left;
-}
-
-.calender_container #UserInfo {
-	padding-top: 10px;
-}
-
-.username {
-	padding-left: 25px;
-	padding-right: 25px;
-	width: 450px;
+.calender_container .userinfo > * {
+	width: 41%
 }
 
 .calender_container #reserve_btn {
-	float: left;
+	/* float: left; */
+	align-items: left;
+	margin-top: 25px;
 	margin-left: 25px;
 	margin-bottom: 25px;
-	border-radius: 10px;
+	border-radius: 5px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-right: 15px;
