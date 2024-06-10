@@ -7,6 +7,7 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="guestStyle.css">
 		<link rel="stylesheet" href="calenderStyle.css">
+		<script src="bookingScript.js"> </script>
 		<title>Stovesberg andelsforening</title>
 	</head>
 	
@@ -42,39 +43,33 @@
 				Ved lejeperiodens udløb skal værelset forlades senest kl. 11, og nøglen lægges i postkassen ved indgangen til Hjallesevej 88. </br>
 				Lejer er ansvarlig for rengøringen når lejeperioden udløber.
 				</p>
-			</div>	<!-- End of left pane -->
+			</div>
 			
 			<div class="right_pane">
-				<div class="calender_container">
-					<header class="calender_header">
-						<p id="calender_head" class="calender_current_date"></p>
-						<div class="calender_navigation">
-							<span id="calender_prev" class="material_symbol_rounded">
-								<
-							</span>
-							<span id="calender_next" class="material_symbol_rounded">
-								>
-							</span>
-						</div>
-					</header>
-
-					<div class="calender_body">
-						<ul class="calender_weekdays">
-							<li>Sun</li>
-							<li>Mon</li>
-							<li>Tue</li>
-							<li>Wed</li>
-							<li>Thu</li>
-							<li>Fri</li>
-							<li>Sat</li>
-						</ul>
-						<ul class="calender_dates"></ul>
-					</div>
-					<button id="reserve_btn">Reserver</button>
-				</div>
-
-			</div>	<!-- End of right pane -->
 			
+			<div class="wrapper">
+				<header>
+					<p class="current-date"> </p>
+					<div class="icons">
+						<span id="prev"> </span>
+						<span id="next"> </span>
+					</div>
+				</header>
+				<div class="calendar">
+					<ul class="weeks">
+						<li>Man</li>
+						<li>Tir</li>
+						<li>Ons</li>
+						<li>Tor</li>
+						<li>Fre</li>
+						<li>Lør</li>
+						<li>Søn</li>
+					</ul>
+					<ul class="days"> </ul>
+				</div>
+			</div>
+
+			</div>
 			<div class="rightmost_pane"> </div>
 		</div>
 
@@ -99,10 +94,6 @@
 				</div>
 			</div>
 		</div>
-		
-		
-		<!-- Include script when layout is created -->
-		<script src="calenderScript.js"> </script>
 
 	</body>
 </html>

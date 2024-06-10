@@ -1,0 +1,16 @@
+{
+  "name": "stovesbergweb",
+  "version": "1.0.0",
+  "description": "Webserver for Stovesberg",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Kenneth Rungstroem Larsen",
+  "license": "ISC",
+  "dependencies": {
+    "flatpickr": "^4.6.13",
+    "ws": "^8.17.0"
+  }
+}

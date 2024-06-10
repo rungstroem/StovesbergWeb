@@ -1,0 +1,30 @@
+<head>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+	<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/themes/dark.css"> -->
+
+  <title> Flatpickr tutorial </title>
+</head>
+
+<body>
+	<div>
+		<input type="text" id="rangeDate" placeholder="Select dates">
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+
+
+	<!--<script>
+		document.onreadystatechange = function(){
+			var calender = document.querySelector('.flatpickr-calender');
+			calender.classList.add("open");
+		}
+	</script>-->
+	<script>
+	$("#rangeDate").flatpickr({
+	    inline: true,
+		mode: 'range',
+	    dateFormat: "Y-m-d"
+	});
+	</script>
+<!-- https://integrating-flatpicker-js.webflow.io/force-calendar-open-on-load -->
+</body>	

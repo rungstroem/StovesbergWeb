@@ -4,13 +4,27 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
+	<!-- Flatpicker style sheet -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.css">
+	
+	<!-- My style sheets -->
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="guestStyle.css">
 		<link rel="stylesheet" href="calenderStyle.css">
+		
+	<!-- Page title -->
 		<title>Stovesberg andelsforening</title>
+	
 	</head>
 	
 	<body>
+
+	<!-- Flatpicker scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.2.3/flatpickr.js"></script>
+	
+
 	<!-- Horizontal menu in top	-->
 		<ul class="main-menu">
 			<li><a href="./index.html">Forside</a></li>
@@ -43,37 +57,25 @@
 				Lejer er ansvarlig for rengøringen når lejeperioden udløber.
 				</p>
 			</div>	<!-- End of left pane -->
-			
+		
+
+		<!-- Right pane  (Calender) -->
 			<div class="right_pane">
 				<div class="calender_container">
-					<header class="calender_header">
-						<p id="calender_head" class="calender_current_date"></p>
-						<div class="calender_navigation">
-							<span id="calender_prev" class="material_symbol_rounded">
-								<
-							</span>
-							<span id="calender_next" class="material_symbol_rounded">
-								>
-							</span>
-						</div>
-					</header>
-
-					<div class="calender_body">
-						<ul class="calender_weekdays">
-							<li>Sun</li>
-							<li>Mon</li>
-							<li>Tue</li>
-							<li>Wed</li>
-							<li>Thu</li>
-							<li>Fri</li>
-							<li>Sat</li>
-						</ul>
-						<ul class="calender_dates"></ul>
+					<div id="UserInfo">
+						<input type="text" id="username" placeholder="Navn">
+						<input type="text" id="useremail" placeholder="Email">
+						<input type="text" id="userphone" placeholder="Telefon">
 					</div>
+					<div id="CalenderPlacement">
+						<input type="text" id="dateRange" placeholder="Select dates">
+					</div>
+
 					<button id="reserve_btn">Reserver</button>
 				</div>
 
-			</div>	<!-- End of right pane -->
+			</div>
+		<!-- End of right pane -->
 			
 			<div class="rightmost_pane"> </div>
 		</div>
@@ -100,9 +102,18 @@
 			</div>
 		</div>
 		
-		
 		<!-- Include script when layout is created -->
-		<script src="calenderScript.js"> </script>
-
+		<!-- Data send script -->
+		
+		<!-- Flatpickr setup script -->
+		<script>
+			$("#dateRange").flatpickr({
+				inline: true,
+				mode: 'range',
+				minDate: "today",
+				dataFormat: "Y-m-d"
+			});
+		</script>
+		
 	</body>
 </html>
