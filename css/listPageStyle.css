@@ -1,0 +1,69 @@
+.pane_container .left_pane {
+	float: left;
+	width: 30%;
+	padding: 40px;
+	background-color: rgb(255,255,255);
+	text-align: left;
+}
+.pane_container .right_pane {
+	float: left;
+	width: 30%;
+	padding: 40px;
+	background-color: rgb(255,255,255);
+	border-left: 1px solid lightgray;
+}
+
+.right_pane {
+	display: flex;
+	padding: 0 10px;
+	align-items: top;
+	justify-content: center;
+}
+
+.list_container {
+	background: #fff;
+	width: 80%;
+	;border-radius: 10px;
+	box-shadow: 0 15px 40px rgba(0,0,0,0.30);
+	padding: 0px 0px 0px 20px;
+	padding: 0px 0px 0px 20px;
+}
+
+.list_container header {
+	display: flex;
+	align-items: center;
+	padding: 25px 30px 10px;
+}
+
+header .h3 {
+	justify-content: center;
+	font-family: "Times New Roman", "Times", "serif";
+}
+
+.list {
+	padding: 0 20px 20px 20px;
+}
+
+.list ul {
+	/*list-style: none;*/
+	flex-wrap: wrap;
+	display: flex;
+	display: block;
+	text-align: left;
+}
+
+.list li {
+	/*float: left;*/
+	font-size: 1.07rem;
+	color: #414141;
+	padding: 0 10px 10px 10px;
+	display: block;
+}
+
+.list li a {
+	color: inherit;
+}
+
+.list li a:hover {
+	color: blue;
+}

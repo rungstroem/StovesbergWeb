@@ -5,6 +5,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="listPageStyle.css">
 		<title>Stovesberg andelsforening</title>
 	</head>
 	
@@ -25,19 +26,28 @@
 
 		<div class="pane_container">
 			<div class="leftmost_pane"> </div>
+			
 			<div class="left_pane">
-				<h3>Dokumenter for andelshavere</h3>
+				<h3>Nyheder & nyhedsbrev</h3>
 				<p> 
-				Årsrapporter, budgetter, og referater fra generalforsamlinger findes på andelshavernes online lager. </br>
-				Kontakt bestyrelsen for adgang. 
-				</p>
-				<p>
-				Vedtægter, vagtplaner, husorden, og afskrivningspolitik kan findes i nedenstående dokumenter.
-				</p>
+				Relevante nyheder og nyhedsbrev vil være at finde på siden her. </br>
+				</br>
+				Årsrapporter, budgetter, og referater fra generalforsamlinger findes på det fælles online lager. </br>
+				Kontakt bestyrelsen for adgang.
 			</div>
+
 			<div class="right_pane">
-				<p> This should be an update pane with news from the facebook group or similar </p>
+				
+				<div class="list_container">
+					<header class="container_header">
+						<h3 id="container_head">Nyhedsbrev</h3>
+					</header>
+					<div class="list">
+						<ul></ul>
+					</div>
+				</div>
 			</div>
+			
 			<div class="rightmost_pane"> </div>
 		</div>
 
@@ -63,5 +73,9 @@
 			</div>
 		</div>
 
+
+	<!-- Use Websocket to get file names of sales figures -->
+	<script src="getNewsScript.js"></script>
+	
 	</body>
 </html>

@@ -114,9 +114,11 @@ body {
 
 /* Social & Share folder */
 .link_bar {
+/*	position: absolute;	*/
 	position: relative;
 	width: 100%;
 	background-color: rgb(230,230,230);
+	bottom: 0;
 }
 
 .link_bar_column {
