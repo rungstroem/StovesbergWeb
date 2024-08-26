@@ -1,4 +1,6 @@
-const WebSocketClient = new WebSocket('ws://localhost:443/');
+var hostname = location.hodtname;
+
+const WebSocketClient = new WebSocket('ws://'+hostname+':443/');
 
 var list = document.querySelector(".list");
 
