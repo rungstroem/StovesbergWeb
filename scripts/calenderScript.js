@@ -62,7 +62,7 @@ prenexIcons.forEach(icon => {
 
 
 reserve_btn.addEventListener("click", () => {
-/*	setInterval(() => {
+	setInterval(() => {
 		alert("Reservation registered");
-	}, 500);	*/
+	}, 500);
 });

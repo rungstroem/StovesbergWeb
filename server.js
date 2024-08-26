@@ -2,7 +2,7 @@
 const http = require('http');
 const fs = require('fs').promises;
 const PORT = 8080;
-const listFilesClass = require('./listFilesClass.js');
+const wsServer = require('./wsServer.js');
 
 function print(data){
 	console.log(data);
@@ -16,7 +16,8 @@ var mime = {
 	jpg: 'image/jpeg',
 	png: 'image/png',
 	svg: 'image/svg+xml',
-	js: 'application/javascript'
+	js: 'application/javascript',
+	pdf: 'application/pdf'
 };
 
 
@@ -101,14 +102,24 @@ const requestListener = function(req, res){
 			return;
 		});
 	}
+	if(req.url.indexOf(".pdf") > -1){
+		fs.readFile(__dirname+"/pdfs/"+req.url).then(contents => {
+			res.setHeader("Content-Type", mime.pdf);
+			res.writeHead(200);
+			res.end(contents);
+		}).catch(err => {
+			console.log(`Could not read pdf`);
+			res.writeHead(500);
+			res.end(err);
+			return;
+		});
+	}
 };
+
 
 function main(){
 	const server = http.createServer(requestListener);
 	server.listen(PORT);
-
-	let salesDir = new listFilesClass(__dirname+"/sales");
-	salesDir.getDirectory();
 }
 
 main();
